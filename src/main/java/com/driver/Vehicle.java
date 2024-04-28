@@ -3,11 +3,11 @@ package com.driver;
 public class Vehicle {
 
     private String name;
-    private int currentSpeed;
-    private int currentDirection;
+    protected int currentSpeed;
+    protected int currentDirection;
 
     public Vehicle(String name) {
-
+            this.name = name;
     }
 
     public void steer(int direction){
