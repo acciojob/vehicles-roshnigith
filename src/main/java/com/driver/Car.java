@@ -25,12 +25,21 @@ public class Car extends Vehicle {
     public int getSeats(){
         return seats;
     }
-    public int getCurrentGear(){
+    public int getGears(){
         return gears;
+    }
+    public int getWheels(){
+        return wheels;
+    }
+    public boolean isManual(){
+        return isManual;
+    }
+    public String getType(){
+        return type;
     }
     public void changeGear(int newGear){
 
-        System.out.println("changeGear method called - The gear is changed to: " + getCurrentGear());
+        System.out.println("changeGear method called - The gear is changed to: " + getGears());
     }
 
     public void changeSpeed(int newSpeed, int newDirection){
