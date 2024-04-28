@@ -7,11 +7,9 @@ public class F1 extends Car {
         super(name, 4, 2, 7, isManual, "Formula 1", 1);
 
     }
-    public int getCurrentDirection(){
-        return currentDirection;
-    }
+
     public void accelerate(int rate){
-        int newSpeed = currentSpeed+rate; //set the value of new speed by using currentSpeed and rate
+        int newSpeed = getCurrentSpeed()+rate; //set the value of new speed by using currentSpeed and rate
         /**
          * speed 0: gear 1
          * speed 1-50: gear 1
